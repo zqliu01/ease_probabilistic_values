@@ -1,3 +1,4 @@
 *.npz
 *.pkl
 *.csv
+.DS_Store
