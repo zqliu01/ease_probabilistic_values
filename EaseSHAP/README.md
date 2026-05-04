@@ -57,28 +57,15 @@ easeshap/
 ├── models.py            # Game models
 └── datasets.py          # Dataset loading utilities
 ```
-
+<!-- 
 ## Documentation
 
-(Add link to documentation)
-
-## Citation
-
-If you use this package in your research, please cite:
-
-```bibtex
-@software{easeshap2026,
-  title={EaseSHAP: Profiled Augmented Contrast Estimation for SHAP},
-  author={Your Name},
-  year={2026},
-  url={https://github.com/yourusername/easeshap}
-}
-```
+(Add link to documentation) -->
 
 ## License
 
-MIT License (or your chosen license)
-
+MIT License
+<!-- 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request. -->
