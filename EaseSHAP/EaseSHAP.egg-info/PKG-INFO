@@ -1,0 +1,130 @@
+Metadata-Version: 2.4
+Name: EaseSHAP
+Version: 0.1.0
+Summary: Profiled Augmented Contrast Estimation for SHAP
+Home-page: https://github.com/yourusername/easeshap
+Author: Your Name
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/easeshap
+Project-URL: Documentation, https://easeshap.readthedocs.io
+Project-URL: Repository, https://github.com/yourusername/easeshap
+Keywords: shapley,banzhaf,game-theory,machine-learning,explainability
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: scipy>=1.7.0
+Requires-Dist: scikit-learn>=1.0.0
+Requires-Dist: matplotlib>=3.5.0
+Requires-Dist: seaborn>=0.11.0
+Requires-Dist: tqdm>=4.60.0
+Provides-Extra: torch
+Requires-Dist: torch>=2.0.0; extra == "torch"
+Requires-Dist: torchvision>=0.15.0; extra == "torch"
+Provides-Extra: tree
+Requires-Dist: xgboost>=1.7.0; extra == "tree"
+Requires-Dist: shap>=0.41.0; extra == "tree"
+Provides-Extra: all
+Requires-Dist: torch>=2.0.0; extra == "all"
+Requires-Dist: torchvision>=0.15.0; extra == "all"
+Requires-Dist: xgboost>=1.7.0; extra == "all"
+Requires-Dist: shap>=0.41.0; extra == "all"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: pytest-cov>=3.0; extra == "dev"
+Requires-Dist: black>=22.0; extra == "dev"
+Requires-Dist: flake8>=4.0; extra == "dev"
+Requires-Dist: mypy>=0.950; extra == "dev"
+Requires-Dist: ipykernel>=6.0.0; extra == "dev"
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+# EaseSHAP
+
+**Profiled Augmented Contrast Estimation for SHAP**
+
+A Python package for efficient estimation of semivalues (Shapley values, Banzhaf values, Beta-Shapley values) using profiled augmented contrast estimators.
+
+## Features
+
+- Fast estimation of various semivalues:
+  - Shapley values
+  - Weighted Banzhaf values
+  - Beta-Shapley values
+- Parallel processing support
+- Exact computation for small problems
+- Multiple sampling estimators
+
+## Installation
+
+### From source
+```bash
+pip install -e .
+```
+
+### For development
+```bash
+pip install -e ".[dev]"
+```
+
+## Quick Start
+
+```python
+from easeshap import runEstimator, exact_value
+
+# Define your game function and parameters
+# ... (add example usage)
+
+# Run estimator
+estimator = runEstimator(
+    estimator='exact_value',
+    n_process=4,
+    semivalue='shapley',
+    game_func=your_game_function,
+    num_player=10,
+    # ... other parameters
+)
+
+values, trajectory = estimator.run()
+```
+
+## Package Structure
+
+```
+easeshap/
+├── __init__.py          # Package initialization
+├── estimators.py        # Core estimation classes
+├── utils.py             # Utility functions
+├── models.py            # Game models
+└── datasets.py          # Dataset loading utilities
+```
+
+## Documentation
+
+(Add link to documentation)
+
+## Citation
+
+If you use this package in your research, please cite:
+
+```bibtex
+@software{easeshap2026,
+  title={EaseSHAP: Profiled Augmented Contrast Estimation for SHAP},
+  author={Your Name},
+  year={2026},
+  url={https://github.com/yourusername/easeshap}
+}
+```
+
+## License
+
+MIT License (or your chosen license)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.

@@ -1,0 +1,62 @@
+{
+  "n": 40,
+  "game_seed": 42,
+  "base_seed": 2026,
+  "run_seeds": [
+    2026,
+    2163,
+    2300,
+    2437,
+    2574,
+    2711,
+    2848,
+    2985,
+    3122,
+    3259
+  ],
+  "alphas": [
+    0.5,
+    0.7071067811865476,
+    0.8660254037844386
+  ],
+  "num_high_order": 1600,
+  "sigma2": null,
+  "run_nue": 5000,
+  "track_step": 500,
+  "nue_budgets": [
+    500,
+    1000,
+    1500,
+    2000,
+    2500,
+    3000,
+    3500,
+    4000,
+    4500,
+    5000
+  ],
+  "semivalue": "shapley",
+  "semivalue_param": null,
+  "groundtruth_tag": "exact_sou",
+  "groundtruth_backend": "analytic_sou",
+  "algorithm_specs": [
+    {
+      "name": "EaseSHAP_order2",
+      "backend": "EaseSHAP",
+      "estimator_kwargs": {
+        "exact_boundary_handling": false,
+        "use_complement_sampling": false,
+        "surrogate_basis": 2,
+        "include_nonlinear_size_terms": false
+      }
+    },
+    {
+      "name": "PolySHAP_regression",
+      "backend": "PolySHAP_regression",
+      "estimator_kwargs": {
+        "max_order": 2
+      }
+    }
+  ],
+  "shared_groundtruth_dir": "/home/ziqiliu2/semivalue_coupled_sampling/real-paper/experiments/SOU_comparison_various_eta/results/regmsr_unpaired_vs_easeshap/groundtruth"
+}
