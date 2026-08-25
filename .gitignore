@@ -1,0 +1,2 @@
+# Cluster scheduler wrappers are local-only.
+*.sbatch

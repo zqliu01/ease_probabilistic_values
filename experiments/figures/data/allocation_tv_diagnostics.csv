@@ -1,0 +1,5 @@
+dataset,n_instances,repeats_per_instance,"TV(q_hat, LeverageSHAP)","TV(q_hat, q_init)"
+ACSIncome,1,10,0.457 (0.005),0.347 (0.005)
+Breast Cancer,10,10,0.062 (0.004),0.077 (0.006)
+NHANES I,10,10,0.067 (0.005),0.137 (0.010)
+Communities and Crime,10,10,0.061 (0.001),0.131 (0.007)

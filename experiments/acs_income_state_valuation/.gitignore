@@ -1,0 +1,6 @@
+exploration/
+plan.md
+plan1.md
+data/*
+!data/.gitignore
+!data/processed/

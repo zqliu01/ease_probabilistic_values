@@ -1,0 +1,42 @@
+{
+  "aggregation": "Frozen component-wise means; no error bars.",
+  "components": {
+    "estimator_overhead_sec": "sampling_sec + final_readout_sec + other_estimator_sec",
+    "utility_eval_sec": "time in estimator.run(samples)"
+  },
+  "outputs": [
+    {
+      "path": "paper/experiments/figures/published/runtime_breakdown_3panel.png",
+      "sha256": "acdf984be1212f948b056fba53b7f0d02ed02c15f065e549a3f31c4d384eb05a",
+      "size_bytes": 177014
+    },
+    {
+      "path": "paper/experiments/figures/published/runtime_breakdown_3panel.pdf",
+      "sha256": "6c7085cf6572a3620af0eb709e98967bda902f59704cbb1559a795531147f902",
+      "size_bytes": 24536
+    }
+  ],
+  "panels": [
+    {
+      "name": "acs_xgboost",
+      "panel": "a",
+      "title": "ACSIncome (XGBoost)"
+    },
+    {
+      "name": "communities_crime",
+      "panel": "b",
+      "title": "Communities and Crime"
+    },
+    {
+      "name": "nhanesi",
+      "panel": "c",
+      "title": "NHANES I"
+    }
+  ],
+  "runtime_definition": "elapsed estimator time minus intermediate checkpoint readouts; the final readout is retained",
+  "source": {
+    "path": "paper/experiments/real_world_benchmark/results/published/runtime_breakdown_3panel_summary.csv",
+    "sha256": "1d53c25cdcfb53acf340d460dd3e5ae8f0fa755a7c13c6a09c019bab66c4983c",
+    "size_bytes": 7744
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "budget_per_player": 200,
+  "checkpoint_interval_per_player": 10,
+  "config_name": "m200n_pilots0p05_0p10_0p20_0p40_updates3_ckpt20",
+  "data_dir": "data",
+  "ease_fo_pilot_design_updates": 3,
+  "ease_switch_fraction": null,
+  "ease_switch_fractions": [
+    0.05,
+    0.1,
+    0.2,
+    0.4
+  ],
+  "excluded_methods": [
+    "LeverageSHAP_paired_border",
+    "RegressionMSR_unbiased_no_replacement"
+  ],
+  "groundtruth_dir": "results/groundtruth",
+  "num_checkpoints": 20,
+  "pilot_label": "pilots0p05_0p10_0p20_0p40",
+  "raw_dir": "results/configs/m200n_pilots0p05_0p10_0p20_0p40_updates3_ckpt20/raw",
+  "tabular_game_mode": "baseline_tree",
+  "total_budget": "200n"
+}

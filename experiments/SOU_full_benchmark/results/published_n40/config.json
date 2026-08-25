@@ -1,0 +1,550 @@
+{
+  "n": 40,
+  "game": "gameSOUStructuredGaussianBitset",
+  "game_seed": 42,
+  "base_seed": 2026,
+  "run_seeds": [
+    2026,
+    2163,
+    2300,
+    2437,
+    2574,
+    2711,
+    2848,
+    2985,
+    3122,
+    3259
+  ],
+  "n_runs": 10,
+  "game_alphas": [
+    0.5,
+    0.7071067811865476,
+    0.8660254037844386
+  ],
+  "game_etas": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "num_high_order": 1600,
+  "max_high_order_size": 40,
+  "sigma2": null,
+  "total_nue": 160000,
+  "num_checkpoints": 50,
+  "run_nue": 4000,
+  "track_step": 80,
+  "nue_budgets": [
+    80,
+    160,
+    240,
+    320,
+    400,
+    480,
+    560,
+    640,
+    720,
+    800,
+    880,
+    960,
+    1040,
+    1120,
+    1200,
+    1280,
+    1360,
+    1440,
+    1520,
+    1600,
+    1680,
+    1760,
+    1840,
+    1920,
+    2000,
+    2080,
+    2160,
+    2240,
+    2320,
+    2400,
+    2480,
+    2560,
+    2640,
+    2720,
+    2800,
+    2880,
+    2960,
+    3040,
+    3120,
+    3200,
+    3280,
+    3360,
+    3440,
+    3520,
+    3600,
+    3680,
+    3760,
+    3840,
+    3920,
+    4000
+  ],
+  "total_nue_budgets": [
+    3200,
+    6400,
+    9600,
+    12800,
+    16000,
+    19200,
+    22400,
+    25600,
+    28800,
+    32000,
+    35200,
+    38400,
+    41600,
+    44800,
+    48000,
+    51200,
+    54400,
+    57600,
+    60800,
+    64000,
+    67200,
+    70400,
+    73600,
+    76800,
+    80000,
+    83200,
+    86400,
+    89600,
+    92800,
+    96000,
+    99200,
+    102400,
+    105600,
+    108800,
+    112000,
+    115200,
+    118400,
+    121600,
+    124800,
+    128000,
+    131200,
+    134400,
+    137600,
+    140800,
+    144000,
+    147200,
+    150400,
+    153600,
+    156800,
+    160000
+  ],
+  "semivalues": [
+    {
+      "name": "shapley",
+      "title": "Shapley",
+      "semivalue": "shapley",
+      "semivalue_param": null
+    },
+    {
+      "name": "beta1_4",
+      "title": "Beta(1, 4)",
+      "semivalue": "beta_shapley",
+      "semivalue_param": [
+        1,
+        4
+      ]
+    },
+    {
+      "name": "beta4_1",
+      "title": "Beta(4, 1)",
+      "semivalue": "beta_shapley",
+      "semivalue_param": [
+        4,
+        1
+      ]
+    },
+    {
+      "name": "wb0p25",
+      "title": "WeightedBanzhaf(0.25)",
+      "semivalue": "weighted_banzhaf",
+      "semivalue_param": 0.25
+    },
+    {
+      "name": "wb0p5",
+      "title": "WeightedBanzhaf(0.5)",
+      "semivalue": "weighted_banzhaf",
+      "semivalue_param": 0.5
+    },
+    {
+      "name": "wb0p75",
+      "title": "WeightedBanzhaf(0.75)",
+      "semivalue": "weighted_banzhaf",
+      "semivalue_param": 0.75
+    }
+  ],
+  "settings": [
+    {
+      "name": "shapley",
+      "title": "Shapley",
+      "semivalue": "shapley",
+      "semivalue_param": null,
+      "alpha": 0.5,
+      "max_high_order_size": 40,
+      "label": "alpha_0p5__shapley"
+    },
+    {
+      "name": "beta1_4",
+      "title": "Beta(1, 4)",
+      "semivalue": "beta_shapley",
+      "semivalue_param": [
+        1,
+        4
+      ],
+      "alpha": 0.5,
+      "max_high_order_size": 40,
+      "label": "alpha_0p5__beta1_4"
+    },
+    {
+      "name": "beta4_1",
+      "title": "Beta(4, 1)",
+      "semivalue": "beta_shapley",
+      "semivalue_param": [
+        4,
+        1
+      ],
+      "alpha": 0.5,
+      "max_high_order_size": 40,
+      "label": "alpha_0p5__beta4_1"
+    },
+    {
+      "name": "wb0p25",
+      "title": "WeightedBanzhaf(0.25)",
+      "semivalue": "weighted_banzhaf",
+      "semivalue_param": 0.25,
+      "alpha": 0.5,
+      "max_high_order_size": 40,
+      "label": "alpha_0p5__wb0p25"
+    },
+    {
+      "name": "wb0p5",
+      "title": "WeightedBanzhaf(0.5)",
+      "semivalue": "weighted_banzhaf",
+      "semivalue_param": 0.5,
+      "alpha": 0.5,
+      "max_high_order_size": 40,
+      "label": "alpha_0p5__wb0p5"
+    },
+    {
+      "name": "wb0p75",
+      "title": "WeightedBanzhaf(0.75)",
+      "semivalue": "weighted_banzhaf",
+      "semivalue_param": 0.75,
+      "alpha": 0.5,
+      "max_high_order_size": 40,
+      "label": "alpha_0p5__wb0p75"
+    },
+    {
+      "name": "shapley",
+      "title": "Shapley",
+      "semivalue": "shapley",
+      "semivalue_param": null,
+      "alpha": 0.7071067811865476,
+      "max_high_order_size": 40,
+      "label": "alpha_0p707107__shapley"
+    },
+    {
+      "name": "beta1_4",
+      "title": "Beta(1, 4)",
+      "semivalue": "beta_shapley",
+      "semivalue_param": [
+        1,
+        4
+      ],
+      "alpha": 0.7071067811865476,
+      "max_high_order_size": 40,
+      "label": "alpha_0p707107__beta1_4"
+    },
+    {
+      "name": "beta4_1",
+      "title": "Beta(4, 1)",
+      "semivalue": "beta_shapley",
+      "semivalue_param": [
+        4,
+        1
+      ],
+      "alpha": 0.7071067811865476,
+      "max_high_order_size": 40,
+      "label": "alpha_0p707107__beta4_1"
+    },
+    {
+      "name": "wb0p25",
+      "title": "WeightedBanzhaf(0.25)",
+      "semivalue": "weighted_banzhaf",
+      "semivalue_param": 0.25,
+      "alpha": 0.7071067811865476,
+      "max_high_order_size": 40,
+      "label": "alpha_0p707107__wb0p25"
+    },
+    {
+      "name": "wb0p5",
+      "title": "WeightedBanzhaf(0.5)",
+      "semivalue": "weighted_banzhaf",
+      "semivalue_param": 0.5,
+      "alpha": 0.7071067811865476,
+      "max_high_order_size": 40,
+      "label": "alpha_0p707107__wb0p5"
+    },
+    {
+      "name": "wb0p75",
+      "title": "WeightedBanzhaf(0.75)",
+      "semivalue": "weighted_banzhaf",
+      "semivalue_param": 0.75,
+      "alpha": 0.7071067811865476,
+      "max_high_order_size": 40,
+      "label": "alpha_0p707107__wb0p75"
+    },
+    {
+      "name": "shapley",
+      "title": "Shapley",
+      "semivalue": "shapley",
+      "semivalue_param": null,
+      "alpha": 0.8660254037844386,
+      "max_high_order_size": 40,
+      "label": "alpha_0p866025__shapley"
+    },
+    {
+      "name": "beta1_4",
+      "title": "Beta(1, 4)",
+      "semivalue": "beta_shapley",
+      "semivalue_param": [
+        1,
+        4
+      ],
+      "alpha": 0.8660254037844386,
+      "max_high_order_size": 40,
+      "label": "alpha_0p866025__beta1_4"
+    },
+    {
+      "name": "beta4_1",
+      "title": "Beta(4, 1)",
+      "semivalue": "beta_shapley",
+      "semivalue_param": [
+        4,
+        1
+      ],
+      "alpha": 0.8660254037844386,
+      "max_high_order_size": 40,
+      "label": "alpha_0p866025__beta4_1"
+    },
+    {
+      "name": "wb0p25",
+      "title": "WeightedBanzhaf(0.25)",
+      "semivalue": "weighted_banzhaf",
+      "semivalue_param": 0.25,
+      "alpha": 0.8660254037844386,
+      "max_high_order_size": 40,
+      "label": "alpha_0p866025__wb0p25"
+    },
+    {
+      "name": "wb0p5",
+      "title": "WeightedBanzhaf(0.5)",
+      "semivalue": "weighted_banzhaf",
+      "semivalue_param": 0.5,
+      "alpha": 0.8660254037844386,
+      "max_high_order_size": 40,
+      "label": "alpha_0p866025__wb0p5"
+    },
+    {
+      "name": "wb0p75",
+      "title": "WeightedBanzhaf(0.75)",
+      "semivalue": "weighted_banzhaf",
+      "semivalue_param": 0.75,
+      "alpha": 0.8660254037844386,
+      "max_high_order_size": 40,
+      "label": "alpha_0p866025__wb0p75"
+    }
+  ],
+  "groundtruth_backend": "analytic_sou",
+  "ease_fo_pilot_design_updates": 3,
+  "ease_sp_pilot_design_updates": 3,
+  "methods": [
+    {
+      "name": "EaseSHAP_interaction_nonlinear",
+      "backend": "EaseSHAP",
+      "support": "all",
+      "estimator_kwargs": {
+        "exact_boundary_handling": true,
+        "boundary_policy": "fixed",
+        "boundary_order": 1,
+        "use_complement_sampling": true,
+        "surrogate_ridge_lambda": 0.01,
+        "surrogate_ridge_schedule": "times_m",
+        "num_folds": 2,
+        "surrogate_readout_mode": "crossfit",
+        "pilot_design_updates": 3,
+        "surrogate_basis": 1,
+        "include_nonlinear_size_terms": true
+      }
+    },
+    {
+      "name": "EaseSHAP_size_player",
+      "backend": "EaseSHAP",
+      "support": "all",
+      "estimator_kwargs": {
+        "exact_boundary_handling": true,
+        "boundary_policy": "fixed",
+        "boundary_order": 1,
+        "use_complement_sampling": true,
+        "surrogate_ridge_lambda": 1.0,
+        "surrogate_ridge_schedule": "fixed",
+        "num_folds": 2,
+        "surrogate_readout_mode": "crossfit",
+        "surrogate_ridge_scaling": "size_trace",
+        "pilot_design_updates": 3,
+        "surrogate_basis": "size_player",
+        "include_nonlinear_size_terms": false,
+        "surrogate_stats_backend": "exact_conditional",
+        "surrogate_solver_mode": "size_player",
+        "surrogate_r_correction_alpha": 1.0,
+        "surrogate_u_correction_alpha": 1.0,
+        "surrogate_correction_solver_mode": "matrix_free",
+        "surrogate_correction_max_iter": 10
+      }
+    },
+    {
+      "name": "OFA_fixed",
+      "backend": "OFA_fixed",
+      "support": "all",
+      "estimator_kwargs": {}
+    },
+    {
+      "name": "OFA_baseline",
+      "backend": "OFA_baseline",
+      "support": "all",
+      "estimator_kwargs": {}
+    },
+    {
+      "name": "sampling_lift",
+      "backend": "sampling_lift",
+      "support": "all",
+      "estimator_kwargs": {}
+    },
+    {
+      "name": "SHAP_IQ",
+      "backend": "SHAP_IQ",
+      "support": "all",
+      "estimator_kwargs": {}
+    },
+    {
+      "name": "GELS",
+      "backend": "GELS",
+      "support": "all",
+      "estimator_kwargs": {}
+    },
+    {
+      "name": "improved_AME",
+      "backend": "improved_AME",
+      "support": "all",
+      "estimator_kwargs": {}
+    },
+    {
+      "name": "kernelSHAP",
+      "backend": "kernelSHAP",
+      "support": "shapley",
+      "estimator_kwargs": {}
+    },
+    {
+      "name": "LeverageSHAP",
+      "backend": "LeverageSHAP",
+      "support": "shapley",
+      "estimator_kwargs": {
+        "sampling_with_replacement": true
+      }
+    },
+    {
+      "name": "permutation",
+      "backend": "permutation",
+      "support": "shapley",
+      "estimator_kwargs": {}
+    },
+    {
+      "name": "complement",
+      "backend": "complement",
+      "support": "shapley",
+      "estimator_kwargs": {}
+    },
+    {
+      "name": "group_testing",
+      "backend": "group_testing",
+      "support": "shapley",
+      "estimator_kwargs": {}
+    },
+    {
+      "name": "WSL",
+      "backend": "WSL",
+      "support": "non_shapley",
+      "estimator_kwargs": {}
+    },
+    {
+      "name": "weighted_permutation",
+      "backend": "weighted_permutation",
+      "support": "non_shapley",
+      "estimator_kwargs": {}
+    },
+    {
+      "name": "OFA_optimal",
+      "backend": "OFA_optimal",
+      "support": "non_shapley",
+      "estimator_kwargs": {}
+    },
+    {
+      "name": "WGELS_shapley",
+      "backend": "WGELS_shapley",
+      "support": "non_shapley",
+      "estimator_kwargs": {}
+    },
+    {
+      "name": "AME",
+      "backend": "AME",
+      "support": "ame",
+      "estimator_kwargs": {}
+    },
+    {
+      "name": "RegressionMSR_unbiased",
+      "backend": "RegressionMSR_unbiased",
+      "support": "all",
+      "estimator_kwargs": {
+        "sampling_with_replacement": true,
+        "paired_sampling": null,
+        "num_folds": 2
+      }
+    },
+    {
+      "name": "PolySHAP_regression",
+      "backend": "PolySHAP_regression",
+      "support": "shapley",
+      "estimator_kwargs": {
+        "max_order": 2
+      }
+    }
+  ],
+  "notes": {
+    "coupsamp": "Excluded by request.",
+    "easeshap_pairing": "use_complement_sampling=True; EaseSHAP pairs only symmetric semivalues.",
+    "easeshap_boundary_handling": {
+      "exact_boundary_handling": true,
+      "boundary_policy": "fixed",
+      "boundary_order": 1
+    },
+    "easeshap_common_regularization": {
+      "surrogate_ridge_lambda": 0.01,
+      "surrogate_ridge_schedule": "times_m",
+      "surrogate_ridge_scaling": "scalar"
+    },
+    "easeshap_size_player_regularization": {
+      "surrogate_ridge_lambda": 1.0,
+      "surrogate_ridge_schedule": "fixed",
+      "surrogate_ridge_scaling": "size_trace"
+    },
+    "runtime_recording": "run_timing.csv reports total, setup, sampling, utility_eval, aggregate, finalize, instrumented readout time, current RSS, and process peak RSS. In parallel runs, process peak RSS is a worker high-water mark and can include earlier tasks."
+  }
+}

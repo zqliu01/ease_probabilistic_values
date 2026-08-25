@@ -1,0 +1,113 @@
+{
+  "aggregation": {
+    "band": "none",
+    "line": "arithmetic mean in the original error scale",
+    "log_axis_interpretation": "log(mean(error)), not mean(log(error))",
+    "x_axis": "utility_evaluations / number_of_players (m/n)"
+  },
+  "method_order": [
+    "EaseSHAP_interaction_nonlinear",
+    "OFA_fixed",
+    "sampling_lift",
+    "SHAP_IQ",
+    "GELS",
+    "improved_AME",
+    "kernelSHAP",
+    "LeverageSHAP",
+    "permutation",
+    "complement",
+    "group_testing",
+    "RegressionMSR_unbiased"
+  ],
+  "outputs": [
+    {
+      "path": "paper/experiments/figures/published/shapley_estimation_trajectories_6panel.png",
+      "sha256": "cb651567b0219b7d29e885a8bff59f3b1dd8e6aa4019e7b923cea9c4c5bc893c",
+      "size_bytes": 1162623
+    },
+    {
+      "path": "paper/experiments/figures/published/shapley_estimation_trajectories_6panel.pdf",
+      "sha256": "94df114ef7035a41d6de09fd8189d9a640c29a2e790cd775335caf6a4932f523",
+      "size_bytes": 76532
+    }
+  ],
+  "panels": [
+    {
+      "metric": "relative_squared_l2_error",
+      "n_players": 50,
+      "panel": "a",
+      "reference": {
+        "path": "paper/experiments/acs_income_state_valuation/results/published_logistic/reference/reference_summary.json",
+        "size_bytes": 1599
+      },
+      "source": {
+        "path": "paper/experiments/acs_income_state_valuation/results/published_logistic/checkpoint_metrics.csv",
+        "size_bytes": 1425407
+      },
+      "title": "ACSIncome (Logistic Regression)"
+    },
+    {
+      "metric": "relative_squared_l2_error",
+      "n_players": 50,
+      "panel": "b",
+      "reference": {
+        "path": "paper/experiments/acs_income_state_valuation/results/published_xgboost/reference/reference_summary.json",
+        "size_bytes": 1621
+      },
+      "source": {
+        "path": "paper/experiments/acs_income_state_valuation/results/published_xgboost/checkpoint_metrics.csv",
+        "size_bytes": 1439206
+      },
+      "title": "ACSIncome (XGBoost)"
+    },
+    {
+      "dataset": "cifar10",
+      "metric": "relative_l2_error",
+      "n_players": 16,
+      "panel": "c",
+      "semivalue": "shapley",
+      "source": {
+        "path": "paper/experiments/real_world_benchmark/results/published/l2_summary.csv",
+        "size_bytes": 4687756
+      },
+      "title": "CIFAR-10"
+    },
+    {
+      "dataset": "breast_cancer",
+      "metric": "relative_l2_error",
+      "n_players": 30,
+      "panel": "d",
+      "semivalue": "shapley",
+      "source": {
+        "path": "paper/experiments/real_world_benchmark/results/published/l2_summary.csv",
+        "size_bytes": 4687756
+      },
+      "title": "Breast Cancer"
+    },
+    {
+      "dataset": "communities_crime",
+      "metric": "relative_l2_error",
+      "n_players": 101,
+      "panel": "e",
+      "semivalue": "shapley",
+      "source": {
+        "path": "paper/experiments/real_world_benchmark/results/published/l2_summary.csv",
+        "size_bytes": 4687756
+      },
+      "title": "Communities and Crime"
+    },
+    {
+      "dataset": "nhanesi",
+      "metric": "relative_l2_error",
+      "n_players": 79,
+      "panel": "f",
+      "semivalue": "shapley",
+      "source": {
+        "path": "paper/experiments/real_world_benchmark/results/published/l2_summary.csv",
+        "size_bytes": 4687756
+      },
+      "title": "NHANES I"
+    }
+  ],
+  "selection_rule": "Explicit frozen results/published* snapshots."
+}
